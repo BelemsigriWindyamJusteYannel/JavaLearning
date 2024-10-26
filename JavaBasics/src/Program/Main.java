@@ -1,6 +1,5 @@
 package Program;
 import java.util.Scanner;
-
 public class Main {
 	//Exercice1
 	public static void exercice1() {
@@ -160,18 +159,20 @@ public class Main {
 	}
 	
 	//Exercice13
-	/*
 	public static void exercice13() {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("saisissez un text terminé par un point :");
-		String text = scan.nextLine();
-		int i = 0;
-		int compte = 0;
-		while(i < text.length()) {
-			char a = text.;
+		Char k = " ";
+		int compteur = 0;
+		System.out.println("Entrez votre text charactère par charactère et finissez par un point\".\"");
+		while(k != ".") {
+			Scan.next().CharAt(0);
+			if(k.toLowerCase() == "a") {
+				compteur++;
+			}
 		}
+		Console.log("La valeur du compteur est => " + compteur);
 	}
-	*/
+	
 	public static void exercice15() {
 		String text =" ";
 		int i = 0;
@@ -182,6 +183,6 @@ public class Main {
 		}
 	}
 	public static void main(String[] arguments) {
-		exercice15();
+		exercice13();
 	}
 }
