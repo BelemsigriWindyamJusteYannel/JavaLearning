@@ -161,16 +161,18 @@ public class Main {
 	//Exercice13
 	public static void exercice13() {
 		Scanner scan = new Scanner(System.in);
-		Char k = " ";
+		char k;
 		int compteur = 0;
 		System.out.println("Entrez votre text charactère par charactère et finissez par un point\".\"");
-		while(k != ".") {
-			Scan.next().CharAt(0);
-			if(k.toLowerCase() == "a") {
+		do{
+			//La particularité est qu'il faut appuyer sur la touche entrée après chaque saisie
+			k = scan.next().charAt(0);
+			if(k == 'a') {
 				compteur++;
 			}
-		}
-		Console.log("La valeur du compteur est => " + compteur);
+		}while(k != '.');
+		scan.close();
+		System.out.println("La valeur du compteur est => " + compteur);
 	}
 	
 	public static void exercice15() {
