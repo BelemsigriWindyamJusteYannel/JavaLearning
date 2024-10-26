@@ -176,29 +176,30 @@ public class Main {
 	}
 	
 	//Exercice14
-		public static void exercice14() {
-			Scanner scan = new Scanner(System.in);
-			System.out.println("Saisissez la première note : ");
-			double note1 = scan.nextDouble();
-			System.out.println("Saisissez la deuxième note : ");
-			double note2 = scan.nextDouble();
-			System.out.println("Saisissez la troisième note : ");
-			double note3 = scan.nextDouble();
-			System.out.println("Saisissez la quatrième note : ");
-			double note4 = scan.nextDouble();
-			double moyenne = (note1 + note2 + note3 + note4)/4;
-			if(moyenne >=10 & moyenne < 12 ) {
-				System.out.println("Mention Passable");
-			}else if(moyenne < 14){
-				System.out.println("Mention Assez bien");
-			}else if(moyenne < 16){
-				System.out.println("Mention Bien");
-			}else if(moyenne >= 16){
-				System.out.println("Mention Très bien");
-			}
-			scan.close();
+	public static void exercice14() {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Saisissez la première note : ");
+		double note1 = scan.nextDouble();
+		System.out.println("Saisissez la deuxième note : ");
+		double note2 = scan.nextDouble();
+		System.out.println("Saisissez la troisième note : ");
+		double note3 = scan.nextDouble();
+		System.out.println("Saisissez la quatrième note : ");
+		double note4 = scan.nextDouble();
+		double moyenne = (note1 + note2 + note3 + note4)/4;
+		if(moyenne >=10 & moyenne < 12 ) {
+			System.out.println("Mention Passable");
+		}else if(moyenne < 14){
+			System.out.println("Mention Assez bien");
+		}else if(moyenne < 16){
+			System.out.println("Mention Bien");
+		}else if(moyenne >= 16){
+			System.out.println("Mention Très bien");
 		}
-		
+		scan.close();
+	}
+	
+	//Exercice15
 	public static void exercice15() {
 		String text =" ";
 		int i = 0;
