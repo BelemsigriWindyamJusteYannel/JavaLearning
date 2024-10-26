@@ -29,7 +29,7 @@ public class Main {
 		int num3 = scan.nextInt();
 		System.out.println("La somme des trois nombres est : "+(num1 + num2 + num3));
 		System.out.println("Le produit des trois nombres est : "+(num1 * num2 * num3 ));
-		System.out.println("La moyenne des trois nombres est : "+(num1 * num2 * num3)/3);
+		System.out.println("La moyenne des trois nombres est : "+(num1 + num2 + num3)/3);
 		scan.close();
 	}
 	
@@ -175,6 +175,30 @@ public class Main {
 		System.out.println("La valeur du compteur est => " + compteur);
 	}
 	
+	//Exercice14
+		public static void exercice14() {
+			Scanner scan = new Scanner(System.in);
+			System.out.println("Saisissez la première note : ");
+			double note1 = scan.nextDouble();
+			System.out.println("Saisissez la deuxième note : ");
+			double note2 = scan.nextDouble();
+			System.out.println("Saisissez la troisième note : ");
+			double note3 = scan.nextDouble();
+			System.out.println("Saisissez la quatrième note : ");
+			double note4 = scan.nextDouble();
+			double moyenne = (note1 + note2 + note3 + note4)/4;
+			if(moyenne >=10 & moyenne < 12 ) {
+				System.out.println("Mention Passable");
+			}else if(moyenne < 14){
+				System.out.println("Mention Assez bien");
+			}else if(moyenne < 16){
+				System.out.println("Mention Bien");
+			}else if(moyenne >= 16){
+				System.out.println("Mention Très bien");
+			}
+			scan.close();
+		}
+		
 	public static void exercice15() {
 		String text =" ";
 		int i = 0;
@@ -185,6 +209,6 @@ public class Main {
 		}
 	}
 	public static void main(String[] arguments) {
-		exercice13();
+		
 	}
 }
